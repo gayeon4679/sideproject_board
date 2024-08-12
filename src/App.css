@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  background-color: #fcfaf8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellowButton {
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color: rgba(233, 140, 14, 0.91);
+  border-radius: 15px;
+  transition: background-color 0.33s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grayButton {
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color: #f3eee7;
+  border-radius: 15px;
+  transition: background-color 0.33s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textBox {
+  width: 800px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #b1aa94;
+  padding-left: 15px;
+} /*
+.contentTextbox {
+  width: 800px;
+  height: 380px;
+  border-radius: 5px;
+  border: 1px solid #b1aa94;
+  padding-left: 15px;
+}
+.contentTextbox::placeholder {
+  color: #b1aa94;
+  font-size: 15px;
+}*/
+.readTextbox {
+  background-color: #f3eee7;
+  width: 800px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: black;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.readContent {
+  background-color: #f3eee7;
+  width: 800px;
+  height: 360px;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  color: black;
+}
+.textBox::placeholder {
+  color: #b1aa94;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  gap: 15px; /* 자식 요소들 간의 간격 조절 */
+}
+.read__body {
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  gap: 20px; /* 자식 요소들 간의 간격 조절 */
+}
+.read__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  display: flex;
+  gap: 10px;
+}
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.date {
+  text-align: right; /* 날짜를 오른쪽으로 정렬 */
+  margin-top: 10px; /* 위쪽 간격 조정 */
+}
+.list-button {
+  text-align: right; /* 부모 요소를 오른쪽 정렬 */
+  margin-top: 10px; /* 버튼 위쪽 간격 조정 */
+}
+
+.yellowButton:hover {
+  background-color: #d77e06;
+}
+.grayButton:hover {
+  background-color: #e0d4c5;
 }

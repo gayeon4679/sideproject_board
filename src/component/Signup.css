@@ -1,0 +1,33 @@
+.signup {
+  max-width: 950px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup__table {
+  border-spacing: 15px 30px;
+}
+
+.signup__button {
+  align-self: flex-end;
+  margin-right: 50px;
+  display: flex;
+  gap: 20px;
+}
+.signup-error {
+  color: #ff0404;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.signup__table td {
+  vertical-align: top;
+}
+.signup__id,
+.signup__pass,
+.signup__nick,
+.signup__email {
+  padding-top: 10px;
+}
