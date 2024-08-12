@@ -1,0 +1,35 @@
+.post {
+  max-width: 950px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post__table {
+  border-spacing: 15px 30px;
+}
+.post__content-cell,
+.post__title-cell {
+  vertical-align: top;
+  padding-top: 10px;
+}
+.post__button {
+  align-self: flex-end;
+  margin-right: 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.post__content-textbox {
+  width: 800px;
+  height: 380px;
+  border-radius: 5px;
+  border: 1px solid #b1aa94;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.post__content-textbox::placeholder {
+  color: #b1aa94;
+  font-size: 15px;
+}

@@ -1,0 +1,16 @@
+.login {
+  max-width: 950px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login__table {
+  border-spacing: 15px 30px;
+}
+
+.login__button {
+  align-self: flex-end;
+  margin-right: 50px;
+}
